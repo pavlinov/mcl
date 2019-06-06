@@ -1,18 +1,20 @@
 #!/bin/bash
 
-##############################################
-# Simple WebServer on Bash
-# httpd on bash
-#
-# example for Mykolaiv Classical Liceum
-##############################################
+########################################################################
+# Simple WebServer on Bash                                             #
+# httpd on bash                                                        #
+#                                                                      #
+# example for Mykolaiv Classical Liceum                                #
+# Copyright: (c) 2019 Mykolaiv Classical Liceum. All rights reserved.   #
+# Author: Alexey Pavlinov                                              #
+########################################################################
 
 echo "Web server started..."
 
 while true;
 	do
 	(
-		VARHTML=$(echo "Hello World!")
+		VARHTML=$(cat simple.webserver.httpd.files/index.html) # `echo "Hello World!"` can be replaced to `cat index.html`
 		VARHTMLLENGTH=$(echo $VARHTML | wc -m)
 
 		echo -e "HTTP/1.1 200 OK\nContent-Type: text/html\nContent-Length: $VARHTMLLENGTH\n\n $VARHTML";
