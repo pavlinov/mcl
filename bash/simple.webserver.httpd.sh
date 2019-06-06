@@ -19,7 +19,7 @@ while true;
 		VARHTMLLENGTH=$(echo $VARHTML | wc -m)
 
 		echo -ne "HTTP/1.1 200 OK\n";
-		echo -ne "Content-Type: text/html\n";
+		echo -ne "Content-Type: text/html; charset=UTF-8\n";                                                                                                                                                                                                                   
 		echo -ne "Content-Length: $VARHTMLLENGTH\n";
 		echo -ne "\n\n";
 		echo -ne $VARHTML;
