@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo park kim min
+
+figlet jeon
+
+ls -la
