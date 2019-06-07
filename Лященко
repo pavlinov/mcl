@@ -1,0 +1,3 @@
+git add Лященко 
+git commit -m "my file test test test bla-bla-bla" Лященко
+git push origin master
