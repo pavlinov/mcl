@@ -1,0 +1,4 @@
+git add  Niki
+git commit -m "my file test test test bla-bla-bla" Niki
+git push origin master
+
